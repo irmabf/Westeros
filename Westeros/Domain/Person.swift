@@ -27,16 +27,38 @@ final class Person {
     }
     
     
-    init(name: String, alias: String, house: House) {
+    init(name: String, alias: String? = nil, house: House) {
         self.name = name
         _alias = alias
         self.house = house
     }
     
     //Ahora no expongo desde afuera que alias pueda ser un opcional y creo un propio init que reciba alias
-    init(name: String, house: House) {
+    /*init(name: String, house: House) {
         self.name = name
         self.house = house
-        _alias = nil
-    }
+        _alias = nil*/
+   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
