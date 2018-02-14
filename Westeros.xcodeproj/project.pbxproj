@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B7EF6B1520349F370034732D /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B1420349F370034732D /* HouseTests.swift */; };
 		B7EF6B172034A26D0034732D /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B162034A26D0034732D /* House.swift */; };
+		B7EF6B1A2034AD540034732D /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B192034AD540034732D /* PersonTests.swift */; };
+		B7EF6B1C2034ADF90034732D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B1B2034ADF90034732D /* Person.swift */; };
 		B7F4816720349264001DF488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4816620349264001DF488 /* AppDelegate.swift */; };
 		B7F4816E20349264001DF488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F4816D20349264001DF488 /* Assets.xcassets */; };
 		B7F4817120349264001DF488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F4816F20349264001DF488 /* LaunchScreen.storyboard */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		B7EF6B1420349F370034732D /* HouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
 		B7EF6B162034A26D0034732D /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		B7EF6B192034AD540034732D /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		B7EF6B1B2034ADF90034732D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B7F4816320349264001DF488 /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F4816620349264001DF488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7F4816D20349264001DF488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				B7EF6B162034A26D0034732D /* House.swift */,
+				B7EF6B1B2034ADF90034732D /* Person.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 			children = (
 				B7F4817D20349264001DF488 /* Info.plist */,
 				B7EF6B1420349F370034732D /* HouseTests.swift */,
+				B7EF6B192034AD540034732D /* PersonTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7EF6B1C2034ADF90034732D /* Person.swift in Sources */,
 				B7EF6B172034A26D0034732D /* House.swift in Sources */,
 				B7F4816720349264001DF488 /* AppDelegate.swift in Sources */,
 			);
@@ -214,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7EF6B1520349F370034732D /* HouseTests.swift in Sources */,
+				B7EF6B1A2034AD540034732D /* PersonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
