@@ -37,6 +37,23 @@ extension House {
         }
        _members.insert(person)
     }
+
+}
+
+// MARK: - Proxy
+
+extension House {
+    var proxyForEquality: String {
+        return "\(name) \(words) \(count)"
+    }
+}
+
+// MARK: - Equatable
+extension House: Equatable{
+    static func ==(lhs: House, rhs: House) -> Bool {
+        return lhs.proxyForEquality == rhs.proxyForEquality
+    }
+    
 }
 
 // MARK: - Sigil

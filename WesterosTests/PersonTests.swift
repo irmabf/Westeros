@@ -10,17 +10,32 @@ import XCTest
 @testable import Westeros
 class PersonTests: XCTestCase {
     
-    var starkHouse: House!
+    
     var starkSigil: Sigil!
-    var ned: Person!
+    var lannisterSigil: Sigil!
+    
+    var starkHouse: House!
+    var lannisterHouse: House!
+    
+    var robb: Person!
     var arya: Person!
+    var tyrion: Person!
+    
+    
     
     override func setUp() {
         super.setUp()
-        starkSigil = Sigil(image: UIImage(), description: "Logo Huargo")
+        starkSigil = Sigil(image: UIImage(), description: "Direwolf")
+        lannisterSigil = Sigil(image: UIImage(), description: "Rampant Lion")
+        
         starkHouse = House(name: "Stark", sigil: starkSigil, words: "Winter is coming")
-        ned = Person(name: "Eddard", alias: "Ned", house: starkHouse)
+        lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Here me roar!")
+        
+        robb = Person(name: "Robb", alias: "The Young Wolf", house: starkHouse)
         arya = Person(name: "Arya", house: starkHouse)
+        
+        tyrion = Person(name: "Tyrion", alias: "The Imp", house: lannisterHouse)
+        
     }
     
     override func tearDown() {
@@ -28,13 +43,23 @@ class PersonTests: XCTestCase {
     }
     
     func testCharacterExistence()  {
-        XCTAssertNotNil(ned)
+        XCTAssertNotNil(robb)
         XCTAssertNotNil(arya)
     }
     
     func testFullName() {
-        XCTAssertEqual(ned.fullName, "Eddard Stark")
+        XCTAssertEqual(robb.fullName, "Robb Stark")
         XCTAssertEqual(arya.fullName, "Arya Stark")
+    }
+    
+    func testPersonEquality(){
+        //Identidad
+        XCTAssertEqual(tyrion, tyrion)
+        //Igualdad
+        let imp = Person(name: "Tyrion", alias: "The Imp", house: lannisterHouse)
+        XCTAssertEqual(imp, tyrion)
+        //Desigualdad
+        XCTAssertNotEqual(tyrion, arya)
     }
     
     
