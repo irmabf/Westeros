@@ -30,12 +30,18 @@ class HouseDetailViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     // Mark: - Life Cycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        syncModelWithView()
+    }
+    /*
     override func viewDidLoad() {
         super.viewDidLoad()
         syncModelWithView()
         
-    }
+    }*/
     
     // Mark: - Sync
     func syncModelWithView(){
@@ -43,6 +49,8 @@ class HouseDetailViewController: UIViewController {
         houseNameLabel.text = "House \(model.name)"
         sigilImageView.image = model.sigil.image
         wordsLabel.text = model.words
+        
+        title = model.name
     }
 
 }
