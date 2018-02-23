@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B743AB102040450500453D76 /* targaryenSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B743AB0D2040450400453D76 /* targaryenSmall.jpg */; };
+		B743AB112040450500453D76 /* codeIsComing.png in Resources */ = {isa = PBXBuildFile; fileRef = B743AB0E2040450400453D76 /* codeIsComing.png */; };
+		B743AB122040450500453D76 /* lannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B743AB0F2040450500453D76 /* lannister.jpg */; };
 		B7EF6B1520349F370034732D /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B1420349F370034732D /* HouseTests.swift */; };
 		B7EF6B172034A26D0034732D /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B162034A26D0034732D /* House.swift */; };
 		B7EF6B1A2034AD540034732D /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B192034AD540034732D /* PersonTests.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B743AB0D2040450400453D76 /* targaryenSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenSmall.jpg; sourceTree = "<group>"; };
+		B743AB0E2040450400453D76 /* codeIsComing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeIsComing.png; sourceTree = "<group>"; };
+		B743AB0F2040450500453D76 /* lannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lannister.jpg; sourceTree = "<group>"; };
 		B7EF6B1420349F370034732D /* HouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
 		B7EF6B162034A26D0034732D /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		B7EF6B192034AD540034732D /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
@@ -58,6 +64,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B743AB142040466700453D76 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B743AB0E2040450400453D76 /* codeIsComing.png */,
+				B743AB0F2040450500453D76 /* lannister.jpg */,
+				B743AB0D2040450400453D76 /* targaryenSmall.jpg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		B7EF6B182034AA090034732D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +86,7 @@
 		B7F4815A20349264001DF488 = {
 			isa = PBXGroup;
 			children = (
+				B743AB142040466700453D76 /* Assets */,
 				B7F4816520349264001DF488 /* Westeros */,
 				B7F4817A20349264001DF488 /* WesterosTests */,
 				B7F4816420349264001DF488 /* Products */,
@@ -192,7 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7F4817120349264001DF488 /* LaunchScreen.storyboard in Resources */,
+				B743AB102040450500453D76 /* targaryenSmall.jpg in Resources */,
+				B743AB122040450500453D76 /* lannister.jpg in Resources */,
 				B7F4816E20349264001DF488 /* Assets.xcassets in Resources */,
+				B743AB112040450500453D76 /* codeIsComing.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
