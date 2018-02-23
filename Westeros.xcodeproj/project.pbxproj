@@ -10,6 +10,8 @@
 		B743AB102040450500453D76 /* targaryenSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B743AB0D2040450400453D76 /* targaryenSmall.jpg */; };
 		B743AB112040450500453D76 /* codeIsComing.png in Resources */ = {isa = PBXBuildFile; fileRef = B743AB0E2040450400453D76 /* codeIsComing.png */; };
 		B743AB122040450500453D76 /* lannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B743AB0F2040450500453D76 /* lannister.jpg */; };
+		B743AB1C204047DD00453D76 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743AB1A204047DD00453D76 /* HouseDetailViewController.swift */; };
+		B743AB1D204047DD00453D76 /* HouseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B743AB1B204047DD00453D76 /* HouseDetailViewController.xib */; };
 		B7EF6B1520349F370034732D /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B1420349F370034732D /* HouseTests.swift */; };
 		B7EF6B172034A26D0034732D /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B162034A26D0034732D /* House.swift */; };
 		B7EF6B1A2034AD540034732D /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B192034AD540034732D /* PersonTests.swift */; };
@@ -33,6 +35,8 @@
 		B743AB0D2040450400453D76 /* targaryenSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenSmall.jpg; sourceTree = "<group>"; };
 		B743AB0E2040450400453D76 /* codeIsComing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeIsComing.png; sourceTree = "<group>"; };
 		B743AB0F2040450500453D76 /* lannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lannister.jpg; sourceTree = "<group>"; };
+		B743AB1A204047DD00453D76 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
+		B743AB1B204047DD00453D76 /* HouseDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseDetailViewController.xib; sourceTree = "<group>"; };
 		B7EF6B1420349F370034732D /* HouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
 		B7EF6B162034A26D0034732D /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		B7EF6B192034AD540034732D /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
@@ -74,6 +78,16 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		B743AB1E204047E300453D76 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B743AB1A204047DD00453D76 /* HouseDetailViewController.swift */,
+				B743AB1B204047DD00453D76 /* HouseDetailViewController.xib */,
+			);
+			name = Controllers;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		B7EF6B182034AA090034732D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +124,7 @@
 				B7F4816F20349264001DF488 /* LaunchScreen.storyboard */,
 				B7F4817220349264001DF488 /* Info.plist */,
 				B7EF6B182034AA090034732D /* Domain */,
+				B743AB1E204047E300453D76 /* Controllers */,
 			);
 			path = Westeros;
 			sourceTree = "<group>";
@@ -210,6 +225,7 @@
 			files = (
 				B7F4817120349264001DF488 /* LaunchScreen.storyboard in Resources */,
 				B743AB102040450500453D76 /* targaryenSmall.jpg in Resources */,
+				B743AB1D204047DD00453D76 /* HouseDetailViewController.xib in Resources */,
 				B743AB122040450500453D76 /* lannister.jpg in Resources */,
 				B7F4816E20349264001DF488 /* Assets.xcassets in Resources */,
 				B743AB112040450500453D76 /* codeIsComing.png in Resources */,
@@ -230,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B743AB1C204047DD00453D76 /* HouseDetailViewController.swift in Sources */,
 				B7EF6B1C2034ADF90034732D /* Person.swift in Sources */,
 				B7EF6B172034A26D0034732D /* House.swift in Sources */,
 				B7F4816720349264001DF488 /* AppDelegate.swift in Sources */,
