@@ -12,6 +12,9 @@
 		B743AB122040450500453D76 /* lannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B743AB0F2040450500453D76 /* lannister.jpg */; };
 		B743AB1C204047DD00453D76 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743AB1A204047DD00453D76 /* HouseDetailViewController.swift */; };
 		B743AB1D204047DD00453D76 /* HouseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B743AB1B204047DD00453D76 /* HouseDetailViewController.xib */; };
+		B77815AA2046BBE200CCFE30 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77815A92046BBE200CCFE30 /* UIViewController+Additions.swift */; };
+		B77815AC2046BE4400CCFE30 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77815AB2046BE4400CCFE30 /* RepositoryTests.swift */; };
+		B77815AE2046BEF800CCFE30 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77815AD2046BEF800CCFE30 /* Repository.swift */; };
 		B7EF6B1520349F370034732D /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B1420349F370034732D /* HouseTests.swift */; };
 		B7EF6B172034A26D0034732D /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B162034A26D0034732D /* House.swift */; };
 		B7EF6B1A2034AD540034732D /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EF6B192034AD540034732D /* PersonTests.swift */; };
@@ -37,6 +40,9 @@
 		B743AB0F2040450500453D76 /* lannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lannister.jpg; sourceTree = "<group>"; };
 		B743AB1A204047DD00453D76 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
 		B743AB1B204047DD00453D76 /* HouseDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseDetailViewController.xib; sourceTree = "<group>"; };
+		B77815A92046BBE200CCFE30 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		B77815AB2046BE4400CCFE30 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		B77815AD2046BEF800CCFE30 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		B7EF6B1420349F370034732D /* HouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
 		B7EF6B162034A26D0034732D /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		B7EF6B192034AD540034732D /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
@@ -88,11 +94,20 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		B77815A82046BBB000CCFE30 /* UIKitExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				B77815A92046BBE200CCFE30 /* UIViewController+Additions.swift */,
+			);
+			path = UIKitExtensions;
+			sourceTree = "<group>";
+		};
 		B7EF6B182034AA090034732D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				B7EF6B162034A26D0034732D /* House.swift */,
 				B7EF6B1B2034ADF90034732D /* Person.swift */,
+				B77815AD2046BEF800CCFE30 /* Repository.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -118,6 +133,7 @@
 		B7F4816520349264001DF488 /* Westeros */ = {
 			isa = PBXGroup;
 			children = (
+				B77815A82046BBB000CCFE30 /* UIKitExtensions */,
 				B743AB1E204047E300453D76 /* Controllers */,
 				B7EF6B182034AA090034732D /* Domain */,
 				B743AB142040466700453D76 /* Assets */,
@@ -135,6 +151,7 @@
 				B7F4817D20349264001DF488 /* Info.plist */,
 				B7EF6B1420349F370034732D /* HouseTests.swift */,
 				B7EF6B192034AD540034732D /* PersonTests.swift */,
+				B77815AB2046BE4400CCFE30 /* RepositoryTests.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -247,8 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B743AB1C204047DD00453D76 /* HouseDetailViewController.swift in Sources */,
+				B77815AE2046BEF800CCFE30 /* Repository.swift in Sources */,
 				B7EF6B1C2034ADF90034732D /* Person.swift in Sources */,
 				B7EF6B172034A26D0034732D /* House.swift in Sources */,
+				B77815AA2046BBE200CCFE30 /* UIViewController+Additions.swift in Sources */,
 				B7F4816720349264001DF488 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +278,7 @@
 			files = (
 				B7EF6B1520349F370034732D /* HouseTests.swift in Sources */,
 				B7EF6B1A2034AD540034732D /* PersonTests.swift in Sources */,
+				B77815AC2046BE4400CCFE30 /* RepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,7 @@ class HouseDetailViewController: UIViewController {
         self.model = model
         //Lamas a super
         super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
+        title = model.name
     }
     //Arreglar problema con los nil
     required init?(coder aDecoder: NSCoder) {
@@ -50,7 +51,7 @@ class HouseDetailViewController: UIViewController {
         sigilImageView.image = model.sigil.image
         wordsLabel.text = model.words
         
-        title = model.name
+        
     }
 
 }

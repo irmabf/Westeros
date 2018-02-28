@@ -17,24 +17,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
         [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = .cyan
+        //window?.backgroundColor = .cyan
         window?.makeKeyAndVisible()
         
         // Crear unos modelos
-        let starkSigil = Sigil(image: UIImage(named: "codeIsComing.png")!, description:"Direwolf")
-        let starkHouse = House(name: "Stark", sigil: starkSigil, words: "Winter is coming!")
-        let lannisterSigil = Sigil(image: UIImage(named: "lannister.jpg")!, description:"Rampant Lion")
-        let lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Here me roar!")
-        
+        let houses = Repository.local.houses
         
         // Crear los controladores
-        let starkHouseViewController = HouseDetailViewController(model: starkHouse)
-        let lannisterHouseViewController = HouseDetailViewController(model: lannisterHouse)
+       
+        //let starkHouseViewController = HouseDetailViewController(model: starkHouse)
+        //let lannisterHouseViewController = HouseDetailViewController(model: lannisterHouse)
+        
+        var controllers = [UIViewController]()
+        
+        for house in houses {
+            controllers.append(HouseDetailViewController(model: house))
+        }
+        
+       
+        
+        var navigationsControllers = [UINavigationController]()
+        
+        for controller in controllers {
+            navigationsControllers.append(controller.wrappedInNavigation())
+        }
         
         
-        //Creamos el combinador
+        //Creamos los combinadores
         let tabBarViewController = UITabBarController()
-        tabBarViewController.viewControllers = [starkHouseViewController, lannisterHouseViewController]
+        tabBarViewController.viewControllers = navigationsControllers
         
         //Asignamos el combinador al rootViewController
         window?.rootViewController = tabBarViewController
